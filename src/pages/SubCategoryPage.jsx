@@ -10,9 +10,9 @@ import { useToast } from "../hooks/useToast";
 import DisplayTable from "../components/DisplayTable";
 import { createColumnHelper } from "@tanstack/react-table";
 import ViewImage from "../components/ViewImage";
-import EditSubCategory from "../components/EditSubcategory";
 import { successToast } from "../utils/handleToast";
 import ConfirmBox from "../components/ConfirmBox";
+import EditSubCategory from "../components/EditSubcategory";
 
 const SubCategoryPage = () => {
   const [openAddSubCategory, setOpenAddSubCategory] = useState(false);
