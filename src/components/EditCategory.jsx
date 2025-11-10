@@ -5,7 +5,7 @@ import SummaryApi from "../common/SummaryApi";
 import AxiosToastError from "../utils/AxiosToastError";
 import { successToast } from "../utils/handleToast";
 import { useToast } from "../hooks/useToast";
-import uploadImage from "../utils/uploadImage";
+import uploadImage from "../utils/UploadImage";
 
 const EditCategory = ({ close, fetchData, data: CategoryData }) => {
   const [data, setData] = useState({
