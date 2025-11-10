@@ -68,9 +68,9 @@ const UploadSubCategoryModel = ({ close, fetchData }) => {
         if (close) {
           close();
         }
-        // if (fetchData) {
-        //   fetchData();
-        // }
+        if (fetchData) {
+          fetchData();
+        }
       }
 
       // console.log("response-----", response);
