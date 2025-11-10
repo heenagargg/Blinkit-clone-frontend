@@ -12,7 +12,7 @@ import { createColumnHelper } from "@tanstack/react-table";
 import ViewImage from "../components/ViewImage";
 import { successToast } from "../utils/handleToast";
 import ConfirmBox from "../components/ConfirmBox";
-import EditSubCategory from "../components/EditSubcategory";
+import EditSubCategory from "../components/EditSubCategory";
 
 const SubCategoryPage = () => {
   const [openAddSubCategory, setOpenAddSubCategory] = useState(false);
