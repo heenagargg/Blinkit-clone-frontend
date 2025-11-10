@@ -104,7 +104,10 @@ const CheckoutPage = () => {
       const { data: responseData } = response;
       const { clientSecret } = response.data;
 
-      window.location.href = response.data.url;
+      console.log("ehat is response", response);
+      return;
+
+      // window.location.href = response.data.url;
 
       if (fetchCartItem) {
         fetchCartItem();
