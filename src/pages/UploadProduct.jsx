@@ -11,7 +11,7 @@ import SummaryApi from "../common/SummaryApi";
 import AxiosToastError from "../utils/AxiosToastError";
 import { useToast } from "../hooks/useToast";
 import successAlert from "../utils/SuccessAlert";
-import uploadImage from "../utils/UploadImage"; 
+import uploadImage from "../utils/UploadImage";
 
 const UploadProduct = () => {
   const [data, setData] = useState({
