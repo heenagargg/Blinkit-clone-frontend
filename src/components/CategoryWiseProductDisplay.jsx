@@ -28,6 +28,7 @@ const CategoryWiseProductDisplay = ({ id, name }) => {
       });
 
       const { data: responseData } = response;
+      console.log("responseData---------------", responseData);
 
       if (responseData.success) {
         setData(responseData.data);
@@ -65,6 +66,8 @@ const CategoryWiseProductDisplay = ({ id, name }) => {
 
     return url;
   };
+
+  if (!loading && data.length === 0) return null;
 
   const redirectURL = handleRedirectProductListpage();
   return (
