@@ -1,5 +1,11 @@
 const AxiosToastError = (error, toast) => {
-  if (error.response) {
+  const errorMessage = error.response?.data?.message;
+  if (error.response?.status === 401 || errorMessage === "Token not found") {
+    return toast({
+      variant: "error",
+      title: "Session expired. Please login again.",
+    });
+  } else if (error.response) {
     // Server responded with a status other than 2xx
     return toast({
       variant: "error",
